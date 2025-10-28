@@ -1,0 +1,58 @@
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* Centrada en el medio del contenedor */
+    transform: translateX(-50%);
+    width: 6px;
+    /* Grosor de la línea */
+    height: 100%;
+    background-color: #000;
+    /* Línea negra */
+    border-radius: 3px;
+    z-index: 0;
+}
+
+/* Circulos sobre la linea*/
+
+.timeline-circle {
+    position: relative;
+    /* Posición relativa para superponerse a la línea */
+    background-color: #8B4513;
+    color: white;
+    width: 100px;
+    height: 100px;
+    /* Círculo de 100x100px */
+    border-radius: 50%;
+    /* Hace que sea un círculo */
+    display: flex;
+    /* Centra el contenido */
+    align-items: center;
+    /* Centra el contenido */
+    justify-content: center;
+    /* Centra el contenido */
+    font-size: 0.9rem;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Negrita */
+    margin: 1.5rem auto 0 auto;
+    /* Centrado horizontalmente */
+    z-index: 1;
+    /* Encima de la línea */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra para profundidad */
+}
+
+/* imagenes parejas */
+.timeline-img {
+    width: 100%;
+    max-width: 420px;
+    /* Tamaño consistente */
+    height: 250px;
+    /* Misma altura para todas */
+    object-fit: cover;
+    /* Recorta sin deformar */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

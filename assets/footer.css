@@ -1,0 +1,22 @@
+.footer-degradado {
+    background: linear-gradient(90deg, #000000, #2b0040, #b8860b);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /*Sombra inferior suave*/ 
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;  /*Asegura que la barra esté por encima de otros elementos*/
+}
+
+/*Estilo de los enlaces*/
+.footer-degradado .footer-link {
+    color: #f5f5f5;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    /*Transición suave al cambiar de color*/
+}
+
+/*Cambio de color al pasar el cursor*/
+.footer-degradado .footer-link:hover {
+    color: #ff8c00;
+    /*Azul fuerte al pasar el mouse*/
+}

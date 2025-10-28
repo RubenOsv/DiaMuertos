@@ -1,0 +1,10 @@
+#gallery [categoria] {
+    display: block;
+}
+
+#todo:target~#gallery [categoria]:not([categoria]),
+#altar:target~#gallery [categoria]:not([categoria="altar"]),
+#desfiles:target~#gallery [categoria]:not([categoria="desfiles"]),
+#actividades:target~#gallery [categoria]:not([categoria="actividades"]) {
+    display: none;
+}
